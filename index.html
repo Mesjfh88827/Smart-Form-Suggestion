@@ -7,6 +7,54 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+        <main class="container">
+    <header>
+        <h1>Smart Form Suggestion — Front-End Prototype</h1>
+        <p class="lead">A lightweight demo that suggests form values based on inputs (client-side simulation of AI).</p>
+    </header>
+
+    <section class="card">
+        <form id="demoForm" autocomplete="off">
+        <div class="field">
+            <label for="fullName">Full name</label>
+            <input id="fullName" name="fullName" type="text" placeholder="e.g. Mohamed Osman">
+        </div>
+
+        <div class="field">
+            <label for="jobTitle">Job title</label>
+            <input id="jobTitle" name="jobTitle" type="text" placeholder="e.g. Front-End Developer">
+            <div class="suggestions" id="jobSuggestions"></div>
+        </div>
+
+        <div class="field">
+            <label for="skills">Primary skills</label>
+            <input id="skills" name="skills" type="text" placeholder="e.g. HTML, CSS, JS">
+            <div class="suggestions" id="skillsSuggestions"></div>
+        </div>
+
+        <div class="field">
+            <label for="city">City</label>
+            <input id="city" name="city" type="text" placeholder="e.g. Cairo">
+            <div class="suggestions" id="citySuggestions"></div>
+        </div>
+
+        <div class="controls">
+            <button type="button" id="autoSuggest">Auto Suggest</button>
+            <button type="submit">Submit (demo)</button>
+        </div>
+        </form>
+    </section>
+
+    <aside class="panel">
+        <h3>Smart Suggestions</h3>
+        <div id="smartBox">Type in any field or click <strong>Auto Suggest</strong>.</div>
+    </aside>
+
+    <footer class="credits">
+        <small>Prototype by Mohamed Osman — Front-End + AI direction</small>
+    </footer>
+    </main>
+
     <script src="./app.js"></script>
 </body>
 </html>
