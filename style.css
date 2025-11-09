@@ -74,6 +74,7 @@ header h1{
 .controls button[type="submit"]{background:#2dd4bf}
 
 .panel{
+    text-align: center;
     margin-top:16px;
     padding:12px;
     border-radius:10px;
