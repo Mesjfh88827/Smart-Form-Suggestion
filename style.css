@@ -8,12 +8,18 @@
 *{
     box-sizing:border-box;
 }
+
 body{
     font-family:Inter, system-ui, Arial;
     margin:0;
     background:linear-gradient(180deg,#071022 0%, #07162a 100%);
     color:var(--white);
     padding:24px;
+}
+
+.h1{
+    text-align: center;
+    margin-bottom: 24px;
 }
 .container{
     max-width:900px;
@@ -24,6 +30,7 @@ header h1{
     font-size:22px;
 }
 .lead{
+    text-align: center;
     color:var(--muted);
     margin-bottom:18px;
 }
@@ -93,5 +100,6 @@ header h1{
 .credits{
     margin-top:18px;
     color:var(--muted);
-    font-size:13px;
+    font-size:15px;
+    text-align:center;
 }
